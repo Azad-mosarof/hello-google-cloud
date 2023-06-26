@@ -24,10 +24,12 @@ class Images(BaseModel):
 
 @app.get('/')
 def main():
+    model_name = 'VGG-Face'
+    model = DeepFace.build_model(model_name)
     return {'message': 'Welcome to Render Fast Api'}
 
 @app.post('/verify')
-async def verify(images: Images):
+def verify(images: Images):
 
     response1 = requests.get(str(images.image1))
     response4 = requests.get(str(images.image2))
