@@ -1,6 +1,7 @@
 uvicorn
 fastapi
 pydantic
-opencv-python==4.7.0.72
 deepface==0.0.79
 requests
+io
+PIL
