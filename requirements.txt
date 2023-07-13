@@ -3,5 +3,4 @@ fastapi
 pydantic
 deepface==0.0.79
 requests
-io
 PIL
