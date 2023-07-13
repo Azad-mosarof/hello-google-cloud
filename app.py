@@ -26,7 +26,7 @@ class Images(BaseModel):
 @app.get('/')
 def main():
     model_name = 'VGG-Face'
-    model = DeepFace.build_model(model_name)
+    model = DeepFace.build_model(model_name, model=model_name + ".h5")
     return {'message': 'Welcome to Render Fast Api'}
 
 @app.post('/verify')
