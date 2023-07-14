@@ -2,8 +2,3 @@ uvicorn
 gunicorn
 fastapi
 pydantic
-cmake
-dlib
-face_recognition
-Pillow
-numpy
