@@ -4,6 +4,5 @@ pydantic
 cmake
 dlib
 face_recognition
-base64
 Pillow
 numpy
